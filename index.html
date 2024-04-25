@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+    <h1>해상도 너비, DPR, 뷰포트 너비</h1>
+    <p class="t1"></p>
+    <p class="t2"></p>
+    <p class="t3"></p>
+
+    <script>
+      document.querySelector(
+        '.t1'
+      ).textContent = `Resolution Width: ${window.screen.width}`;
+      document.querySelector(
+        '.t2'
+      ).textContent = `Device Pixel Ratio: ${window.devicePixelRatio}`;
+      document.querySelector(
+        '.t3'
+      ).textContent = `Viewport Width: ${window.innerWidth}`;
+    </script>
+  </body>
+</html>
